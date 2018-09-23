@@ -1,0 +1,55 @@
+﻿body
+{
+<form id="helpdeskForm" runat="server">
+<div class="row">
+<label for="ReporterName">Reporter Name:</label>    
+<asp:TextBox ID="rname" runat="server" />
+</div>
+<div class="row">
+<label for="Email">Email:</label>
+<asp:TextBox ID="email" runat="server" />
+</div>
+<div class="row">
+<label for="Severity">Severity:</label>
+<asp:DropDownList ID="Severity" runat="server" />
+</div>
+<div class="row">
+<label for="Status">Status:</label>
+<asp:DropDownList ID="Status" runat="server" />
+</div>
+<div class="row">
+<label for="Department">Department:</label>
+<asp:DropDownList ID="Department" runat="server" />
+</div>
+<div class="row">
+<label for="EmployeeAssigned">Assigned to:</label>
+<asp:DropDownList ID="AssignedTo" runat="server" />
+</div>
+<div class="row">
+<label for="Comments">Comments:</label>
+<asp:TextBox ID="Comments" runat="server" TextMode="MultiLine" />
+</div>
+<div class="row">
+<asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+</div>
+</form>
+}
+label {
+    float: left;
+    width: 200px;
+    margin: 6px;
+}
+
+#helpdeskForm {
+    width: 420px;
+    margin: 0 auto;
+}
+
+div.row {
+    clear: left;
+}
+
+#Comments {
+    width: 200px;
+    height: 100px;
+}
